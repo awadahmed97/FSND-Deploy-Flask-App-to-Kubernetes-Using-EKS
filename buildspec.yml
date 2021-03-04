@@ -39,6 +39,4 @@ phases:
 artifacts:
   files: build.json
 
-env:
-  parameter-store:
-    JWT_SECRET: JWT_SECRET
+kubectl patch configmap/aws-auth -n kube-system --patch "$(cat /tmp/aws-auth-patch.yml)"
