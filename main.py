@@ -12,6 +12,7 @@ import jwt
 from flask import Flask, jsonify, request, abort
 
 #ELB = a6e2b51b8e7504eb89b297b9e97c3e1f-1542917316.us-east-2.elb.amazonaws.com
+#ELB = a6e2b51b8e7504eb89b297b9e97c3e1f-1542917316.us-east-2.elb.amazonaws.com
 
 JWT_SECRET = os.environ.get('JWT_SECRET', 'abc123abc1234')
 LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO')
